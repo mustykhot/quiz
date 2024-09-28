@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-// import { questions } from "../utils/constants";
+import  { useEffect, useState } from "react";
 import { QuestionDisplay } from "./questionDisplay";
 import Result from "./displayResult";
 import { QuestionType } from "../utils/types";
