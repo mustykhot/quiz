@@ -79,7 +79,7 @@ const DisplayQuiz = () => {
           {!isFetching ? (
             <>
               <p className="question_number">
-                Question {currentQuestion}/{questions.length}
+                Question {currentQuestion + 1}/{questions.length}
               </p>
               <QuestionDisplay
                 question={questions[currentQuestion]}
