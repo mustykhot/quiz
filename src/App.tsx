@@ -1,4 +1,4 @@
-import "./styles/App.scss";
+import "./styles/App.css";
 import DisplayQuiz from "./components/displayquiz";
 
 function App() {

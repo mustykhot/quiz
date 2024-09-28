@@ -1,4 +1,4 @@
-import "../styles/card.scss";
+import "../styles/card.css";
 import { QuestionType } from "../utils/types";
 type QuestionCardProps = {
   question: QuestionType;
