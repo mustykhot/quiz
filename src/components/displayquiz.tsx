@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { QuestionDisplay } from "./questionDisplay";
 import Result from "./displayResult";
 import { QuestionType } from "../utils/types";
@@ -49,7 +49,7 @@ const DisplayQuiz = () => {
     setIsFetching(true);
 
     const response = await fetch(
-      "https://opentdb.com/api.php?amount=10&type=multiple"
+      "https://opentdb.com/api.php?amount=7&type=multiple"
     );
     const data = await response.json();
     const formattedQuestions = data?.results?.map((item: any) => ({
@@ -78,6 +78,9 @@ const DisplayQuiz = () => {
         <>
           {!isFetching ? (
             <>
+              <p className="question_number">
+                Question {currentQuestion}/{questions.length}
+              </p>
               <QuestionDisplay
                 question={questions[currentQuestion]}
                 onAnswerSelect={handleAnswer}
